@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="js/canvasjs.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Materialize Theme</title>
+</head>
+
+<body>
+    <!--Horizental Navbar-->
+    <nav class="blue lighten-1 z-depth-4">
+        <div class="nav-wrapper">
+            <ul class="left">
+                <li>
+                    <a href="#" data-activates="side-nav" class="button-collapse show-on-large left">
+                        <i class="material-icons white-text dark">menu</i>
+                    </a>
+                    <a href="#" class="barand-logo left">
+                        <h4 class="white-text center">Admin</h4>
+                    </a>
+                </li>
+            </ul>
+            <div class="hide-on-med-and-down input-field blue lighten-3 z-depth-1">
+                <!--<input name="Search" class="header-search-input z-depth-2" placeholder="Explore Materialize" type="text">-->
+                <i class="material-icons prefix">search</i>
+                <input id="search" type="search" class="prefix" placeholder="search here" required>
+            </div>
+            <ul class="right hide-on-med-and-down ">
+                <li>
+                    <a href="# " class="dropdown-button btn-floating btn-medium blue z-depth-4 waves-effect waves-light " data-activates="email-dropdown " data-beloworigin="true " data-constrainwidth="true ">
+                        <i class="material-icons white-text lighten-1 medium ">email</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="# " class="dropdown-button btn-floating btn-medium blue z-depth-4 waves-effect waves-light " data-activates="notify-dropdown " data-beloworigin="true " data-constrainwidth="true ">
+                        <i class="material-icons white-text lighten-1 medium ">notifications</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="# " class="dropdown-button btn-floating btn-medium blue z-depth-4 waves-effect waves-light " data-beloworigin="true " data-constrainwidth="true " data-activates="msg-dropdown " isScrollabe="true ">
+                        <i class="material-icons white-text lighten-1 medium ">message</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="# " class="blue-text dark btn-floating btn-medium blue z-depth-4 waves-effect waves-light ">
+                        <i class="material-icons white-text lighten-1 medium left ">account_circle</i>
+                    </a>
+                </li>
+            </ul>
+
+            <!--SIDE-NAVBAR-->
+            <ul id="side-nav" class="side-nav ">
+                <li>
+                    <div class="user-view ">
+                        <div class="background ">
+                            <img src="img/back.png " alt=" ">
+                        </div>
+                        <a href="# " class="circle ">
+                            <img src="img/avatar.jpeg " alt=" " class="responsive-img circle ">
+                        </a>
+                        <a href="# ">
+                            <span class="name white-text ">Jamaihu</span>
+                        </a>
+                        <a href="# ">
+                            <span class="email white-text ">jamaihu@gmail.com</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a href="# ">
+                        <i class="material-icons black-text lighten-1 medium large active ">home</i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="# ">
+                        <i class="material-icons black-text lighten-1 large medium ">notifications</i> Notifications
+                    </a>
+                </li>
+                <li>
+                    <a href="# ">
+                        <i class="material-icons black-text lighten-1 large medium ">message</i>Message
+                    </a>
+                </li>
+                <li>
+                    <a href="# " class="black-text ">
+                        <i class="material-icons black-text lighten-1 large medium ">account_circle</i>Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Dropdown to Email icon-->
+    <ul id="email-dropdown " class="collection dropdown-content ">
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+    </ul>
+    <!--Dropdown to Notification icon-->
+    <ul id="notify-dropdown " class="collection dropdown-content ">
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+    </ul>
+    <!--Dropdown to Message icon-->
+    <ul id="msg-dropdown " class="collection dropdown-content ">
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+        <li class="collection-item avatar ">
+            <a href="# ">
+                <img src="img/avatar1.jpeg " alt=" " class="circle ">
+                <span class="title black-text dark ">Jamaihu</span>
+                <p class="truncate black-text light ">Regarding the meeting held on tommorow mwjklwqljihjwij.</p>
+            </a>
+        </li>
+    </ul>
+
+    <!--Services Section-->
+    <section class="section section-top ">
+        <div class="row ">
+            <div class="col s12 m6 l3 ">
+                <div class="card center blue z-depth-4 ">
+                    <i class="material-icons white-text medium ">apps</i>
+                    <h5 class="white-text light ">Personel Commerce</h5>
+                    <div class="card-action blue ">
+                        <a href="# " class="btn btn-floating white-text dark blue z-depth-4 waves-effect waves-light ">
+                            <i class="material-icons ">arrow_forward</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 ">
+                <div class="card center red z-depth-4 ">
+                    <i class="material-icons white-text medium ">lock_open</i>
+                    <h5 class="white-text light ">Access & Privileges</h5>
+                    <div class="card-action red ">
+                        <a href="# " class="btn btn-floating white-text dark red z-depth-4 waves-effect waves-light ">
+                            <i class="material-icons ">arrow_forward</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 ">
+                <div class="card center lime darken-2 z-depth-4 ">
+                    <i class="material-icons white-text medium ">account_balance</i>
+                    <h5 class="white-text light ">Accounts</h5>
+                    <div class="card-action lime darken-2 ">
+                        <a href="# " class="btn btn-floating white-text dark lime darken-2 z-depth-4 waves-effect waves-light ">
+                            <i class="material-icons ">arrow_forward</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3 devices ">
+                <div class="card center teal lighten-2 z-depth-4 ">
+                    <h5 class="white-text light ">Devices</h5>
+                    <div class="card-action teal lighten-2 ">
+                        <i class="material-icons white-text large ">phone_android</i>
+                        <i class="material-icons white-text large ">tablet</i>
+                        <i class="material-icons white-text large ">laptop</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--Charts-->
+    <section class="section section-charts ">
+        <div class="row">
+            <div class="col s12 m6 l6 ">
+                <div class="card-panel z-depth-4 " style="border-radius: 5px !important; ">
+                    <div id="chartContainer-app " style="height: 400px; width: 100%; "></div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6 ">
+                <div class="card-panel z-depth-4 " style="border-radius: 5px !important; ">
+                    <div id="chartContainer-res " style="height: 400px; width: 100%; "></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Work Related Section-->
+    <section class="section section-work ">
+        <div class="row ">
+            <div class="col s12 m4 l4 ">
+                <ul class="collection with-header task-div z-depth-4 " style="border-radius: 10px !important; ">
+                    <li class="collection-header ">
+                        <h5 class="blue-text dark center ">My Tasks</h5>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/web-design.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Admin Template</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris lorem capsum.</p>
+                        <h6 class="red-text light ">45
+                            <span>%</span>
+                        </h6>
+                        <div class="progress ">
+                            <div class="determinate red " style="width:45%; "></div>
+                        </div>
+
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/android.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Voice Assistant</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <h6 class="green-text light ">75
+                            <span>%</span>
+                        </h6>
+                        <div class="progress ">
+                            <div class="determinate green " style="width:75%; "></div>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/mean-stack.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Sentiment Analysis</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <h6 class="orange-text light ">95
+                            <span>%</span>
+                        </h6>
+                        <div class="progress ">
+                            <div class="determinate orange " style="width:95%; "></div>
+                        </div>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/ios-app.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Snake Game</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <h6 class="blue-text light ">25
+                            <span>%</span>
+                        </h6>
+                        <div class="progress ">
+                            <div class="determinate blue " style="width:25%; "></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--Incidents & services collection-->
+            <div class="col s12 m4 l4 ">
+                <ul class="collection with-header task-div z-depth-4 " style="border-radius: 10px !important; ">
+                    <li class="collection-header ">
+                        <h5 class="blue-text darken-2 center ">Incidents & Services Requests</h5>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/complete.png " alt=" " class="circle ">
+                        <h4 class="title black-text light ">Assigned Projects
+                            <span class="black-text dark large right ">12</span>
+                        </h4>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/pending.png " alt=" " class="circle ">
+                        <h4 class="title black-text light ">Pending Projects
+                            <span class="red-text dark large right ">5</span>
+                        </h4>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/close.png " alt=" " class="circle ">
+                        <h4 class="title black-text light ">Closed Projects
+                            <span class="green-text dark large right ">7</span>
+                        </h4>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="img/throughput.png " alt=" " class="circle ">
+                        <h4 class="title black-text light ">My Throughput
+                            <span class="right green-text ">59%</span>
+                        </h4>
+                        <div class="progress ">
+                            <div class="determinate green " style="width: 59% "></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!--Recommendations collection-->
+            <div class="col s12 m4 l4 ">
+                <ul class="collection with-header task-div z-depth-4 " style="border-radius: 10px !important; ">
+                    <li class="collection-header ">
+                        <h5 class="blue-text darken-2 center ">Recommendations</h5>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="/img/vpn.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Cafe Vpn-3.0</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <a href="# " class="green-text dark ">Install</a> |
+                        <a href=" " class="red-text dark ">Ignore</a>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="/img/vmware.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Vmware Workstation-5.03 </span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <a href="# " class="green-text dark ">Install</a> |
+                        <a href=" " class="red-text dark ">Ignore</a>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="/img/windows.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">Windows OS-10.2</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <a href="# " class="green-text dark ">Install</a> |
+                        <a href=" " class="red-text dark ">Ignore</a>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="/img/git.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">git client</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <a href="# " class="green-text dark ">Install</a> |
+                        <a href=" " class="red-text dark ">Ignore</a>
+                    </li>
+                    <li class="collection-item avatar ">
+                        <img src="/img/vscode.png " alt=" " class="circle ">
+                        <span class="title black-text dark ">VS Code Editor</span>
+                        <p class="truncate black-text light ">Irure velit incididunt ipsum quis commodo dolor laboris.</p>
+                        <a href="# " class="green-text dark ">Install</a> |
+                        <a href=" " class="red-text dark ">Ignore</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--Floating Button-->
+
+    <div class="fixed-action-btn ">
+        <a class="btn-floating btn-large blue ">
+            <i class="large material-icons ">help</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating red ">
+                    <i class="material-icons ">call</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating yellow darken-1 ">
+                    <i class="material-icons ">email</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating green ">
+                    <i class="material-icons ">message</i>
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating blue ">
+                    <i class="material-icons ">assistant</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script type="text/javascript " src="js/materialize.min.js "></script>
+    <script type="text/javascript " src="js/charts.js "></script>
+    <script>
+        $(document).ready(function() {
+            // Init Side nav
+            $(".button-collapse ").sideNav();
+            $('.fixed-action-btn').floatingActionButton();
+            $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrainWidth: flase,
+                hover: true, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: true, // Displays dropdown below the button
+                alignment: 'left', // Displays dropdown with edge aligned to the left of button
+                stopPropagation: false
+            });
+
+        });
+    </script>
+</body>
+
+</html>

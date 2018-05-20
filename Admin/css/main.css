@@ -1,0 +1,65 @@
+                body {
+                    background-color: #f5f5f5 !important;
+                }
+                
+                nav .nav-wrapper {
+                    margin-right: 1% !important;
+                }
+                /*searchbar*/
+                
+                nav .input-field {
+                    margin: 5px auto 0 230px;
+                    width: calc(100% - 1000px);
+                    height: 45px;
+                    display: inline-block;
+                    position: relative;
+                    font-size: 24px;
+                    top: 3px;
+                    left: 34px;
+                    border-radius: 5px;
+                }
+                
+                nav .input-field i {
+                    line-height: 45px;
+                    margin-left: 10px !important;
+                }
+                
+                nav .input-field input::placeholder {
+                    color: white !important;
+                    font-size: 18px !important;
+                    font-weight: 400;
+                    margin-left: 10px !important;
+                }
+                
+                nav .input-field input:focus {
+                    color: #64b5f6 !important;
+                    font-size: 18px !important;
+                }
+                
+                nav .input-field .label-icon i:focus {
+                    color: #64b5f6 !important;
+                }
+                /*End of search bar*/
+                
+                .dropdown-content {
+                    width: 400px !important;
+                }
+                
+                .dropdown-content:hover {
+                    background-color: none !important;
+                }
+                /*Section-top*/
+                
+                .section-top .card {
+                    border-radius: 5px !important;
+                }
+                /*Services*/
+                
+                .section-top h5 {
+                    padding-top: 3% !important;
+                }
+                /* Devices CSS*/
+                
+                .devices .card i {
+                    margin-left: 3% !important;
+                }
